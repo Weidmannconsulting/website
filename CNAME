@@ -1,4 +1,2 @@
-Host: www
-Type: CNAME
-Points to: weidmannconsulting.github.io
-TTL: 1 hour
+www.weidmannconsulting.com
+
