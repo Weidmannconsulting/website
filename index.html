@@ -308,6 +308,16 @@
   </footer>
 
   <script>
+    window.addEventListener('load', () => {
+    // Scroll to top after page fully loads
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+
+      // Also blur any focused input (helps prevent auto-scroll on mobile)
+      if (document.activeElement && document.activeElement.blur) {
+        document.activeElement.blur();
+      }
+    }, 100);
     function toggleMenu() {
       const nav = document.getElementById('mobileNav');
       nav.classList.toggle('open');
